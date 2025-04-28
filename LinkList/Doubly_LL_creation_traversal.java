@@ -2,9 +2,6 @@ package DSA.LinkList;
 
 import java.util.Scanner;
 
-import static DSA.LinkList.Circular_LL_creation_insertion_deletion.head;
-import static DSA.LinkList.Circular_LL_creation_insertion_deletion.tail;
-
 public class Doubly_LL_creation_traversal {
    static class Node{
        int data;
@@ -88,28 +85,27 @@ public class Doubly_LL_creation_traversal {
                         tail=temp;
                         break;
                     }
-//                    case 3:{
-//                        Node temp=head;
-//                        Node psv=temp.next;
-//                        System.out.println("Enter the position you want to enter the data");
-//                        int pos=sc.nextInt();
-//                        for (int i = 0; i < pos-1; i++) {
-//                            temp=psv;
-//                            psv=psv.next;
-//                        }
-//                        temp.next=newNode;
-//                        newNode.previous=temp;
-//                        psv.previous=newNode;
-//                        newNode.next=psv;
-//                        break;
-//                    }
+                    case 3:{
+                        Node temp=head;
+                        Node psv=temp.next;
+                        System.out.println("Enter the position you want to delete the data");
+                        int pos=sc.nextInt();
+                        for (int i = 1; i < pos-1; i++) {
+                            temp=psv;
+                            psv=psv.next;
+                        }
+                        psv=psv.next;
+                        temp.next=psv;
+//                        temp.next=psv.next;    //alternative
+//                        psv.next.previous=temp;
+                        break;
+                    }
                 }
             }
             System.out.println("To enter more data click 1");
             x=sc.nextInt();
         }while (x==1);
     }
-
     public void travers(){
         if(head==null){
             System.out.println("List doesn't exist");
@@ -121,7 +117,6 @@ public class Doubly_LL_creation_traversal {
             }while (temp!=null);
         }
     }
-
     public static void main(String[] args) {
         Doubly_LL_creation_traversal connect=new Doubly_LL_creation_traversal();
         connect.creation();

@@ -1,0 +1,19 @@
+Stack: [LIFO] Last in first out
+Its implementation is done by using bot Array and LinkedList because these two are preliminary Data structures
+In further DS (Stack, Queue, Graph, Tree) implements Array and LinkedList
+
+a. Stack using Array
+* Underflow condition
+* Overflow condition
+* push
+* pop
+* display
+
+Top always represent index.
+
+b. Stack using LinkedList
+* Underflow condition
+* Overflow condition //Not possible only in one case when we run out of memory
+* push-> in the beginning
+* pop-> in the beginning
+* display
