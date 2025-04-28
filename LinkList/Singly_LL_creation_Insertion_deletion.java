@@ -78,6 +78,7 @@ public class Singly_LL_creation_Insertion_deletion {
 
             if(head==null){
                 System.out.println("List doesn't exist");
+
             }else {
                 System.out.println("Deleting: 1.In the Beginning 2.In the end 3.In the required position");
                 int con=sc.nextInt();
@@ -119,12 +120,86 @@ public class Singly_LL_creation_Insertion_deletion {
         }while (x==1);
     }
 
+    public void updation(){
+        int x;
+        System.out.println("Enter the new value");
+        Scanner sc=new Scanner(System.in);
+        int newValue=sc.nextInt();
+        do{
+            if(head==null){
+                System.out.println("List doesn't exist so create a new list");
+                Singly_LL_creation_Insertion_deletion list=new Singly_LL_creation_Insertion_deletion();
+                list.creation();
+            }else {
+                System.out.println("1.In the beginning 2.In the end 3.In the required position");
+                int input=sc.nextInt();
+                switch (input){
+                    case 1:{
+                        Node temp=head;
+                        temp.data=newValue;
+                        break;
+                    }
+                    case 2:{
+                        Node temp=head;
+                        while (temp!=null){
+                            temp=temp.next;
+                        }
+                        temp.data=newValue;
+                        break;
+                    }case 3:{
+                        Node temp=head;
+                        System.out.println("Enter the position");
+                        int pos=sc.nextInt();
+                        for (int i = 0; i <pos-1 ; i++) {
+                            temp=temp.next;
+                        }
+                        temp.data=newValue;
+                        break;
+                    }
+                    default:{
+                        System.out.println("Invalid input");
+                        break;
+                    }
+
+                }
+            }
+            System.out.println("to update update another element enter 1 ");
+            x=sc.nextInt();
+        }while (x==1);
+    }
+
     public static void main(String[] args) {
         Singly_LL_creation_Insertion_deletion classes=new Singly_LL_creation_Insertion_deletion();
-        classes.creation();
-        classes.travers();
-        classes.deletion();
-        classes.travers();
+        System.out.println("1.create 2.Travers 3.deletion");
+        Scanner sc=new Scanner(System.in);
+        int switchValue=sc.nextInt();
+
+
+        switch (switchValue){
+            case 1:{
+                classes.creation();
+                classes.travers();
+                break;
+            }
+            case 2:{
+                classes.travers();
+                break;
+            }
+            case 3:{
+                classes.deletion();
+                classes.travers();
+                break;
+            }
+            case 4:{
+                classes.updation();
+                classes.travers();
+            }
+            default:{
+                System.out.println("Invalid output");
+                break;
+            }
+
+        }
     }
 }
 
