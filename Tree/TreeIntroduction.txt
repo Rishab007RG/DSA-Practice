@@ -1,0 +1,14 @@
+*Tree
+*Binary Tree: A tree structure where each node has at most two children.[0,1,2 number of sub nodes]
+*Types:
+a. Complete BT :2 nodes for each parent node ,even if the last level nodes isn't completely filled, if the last level nodes ends on right its not a complete binary tree
+b. Full BT / 2-Tree / proper BT / strict BT: Each node should contain 2 childes nodes
+f. perfect BT: all the level should be filled with the nodes.
+
+
+Tree Practice
+* Max no of node possible at level i= 2^i
+* Max no of nodes possible in a BT at a height h: n=2^(h+1)-1
+* Min no of nodes possible in a BT at a height h: n= [h+1]
+* max height of a BT having n nodes: h=(n-1) <- derived from n= [h+1]
+* min height of a BT having n nodes : h=log2 (n+1)-1 <- derived from n=2^(h+1)-1

@@ -12,3 +12,9 @@ Implementing Queue Using Array
 * enqueue
 * dequeue
 * display
+
+Implementing Circular Queue Using Array
+*Underflow
+f=(f+1)%5
+*Overflow
+r=(r+1)%5
