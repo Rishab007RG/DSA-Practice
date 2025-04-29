@@ -17,3 +17,8 @@ b. Stack using LinkedList
 * push-> in the beginning
 * pop-> in the beginning
 * display
+
+REVERSE POLISH NOTATION
+* Infix ex:a+b
+  *Prefix ex:+ab
+  *Postfix ex:ab+
