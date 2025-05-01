@@ -1,0 +1,27 @@
+Graphs
+* It's a non-linear data structure.
+* A set of combination of Vertices and Edges is a Graph.
+* Graph can contains cycle.
+* A graph G(V,E) consist:
+a. a set of objects v={v1,v2,v2...vn} called vertices
+b. a set of objects e={e1,e2,e3,...en} called Edges
+
+Terminologies
+* self loop:Where an edge starting and ending point are same (a->a)
+* Parallel edge: Where the starting and ending vertices of an edge are same which forms parallel lines.
+* Adjacent vertices: In a square(ABCD) A-B and A-C are adjacent vertices
+* Finite and Infinite graph: n number of vertices and edges.
+* Incident and Degree: vertices having joining points ex:A has 2 edges(degree).
+* Directed Graph:Consists of arrow specifying the direction A->B.
+* Undirected Graph:No arrows specified.
+* Regular Graph:A graph where the degree of all the vertices are same.
+* Isolated Graph:Where the degree of a vertices are 0.
+* Pendent Vertex: Vertices having only 1 degree.
+* Null Graph: No vertices and edges
+* Multi Graphs:which consist at least 1 Self loop 1 parallel edges or both.
+* Cycle Graph: ABCDA
+* Strongly connected graph:A graph where more that 2 vertices and A->B , B->C->A is possible.
+* Simple Graph: No and loop ore parallel exist.
+* Articulation Point:Removing a vertices from the graph causing it disconnected is called Articulated point.
+* Weighted Graph:passing a weight to the edges. (Graph always searches for the shortest path).
+* Bridge:An edge on removing causes an disconnection in graph is called Bridge.

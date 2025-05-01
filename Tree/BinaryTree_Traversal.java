@@ -21,12 +21,12 @@ public class BinaryTree_Traversal {
     static void inorder(Node node){
         if(node==null)return;
         inorder(node.left);
-        System.out.println(node.data);
+        System.out.println(node.data+" ");
         inorder(node.right);
     }
     static void preorder(Node node){
         if(node==null)return;
-        System.out.println(node.data);
+        System.out.println(node.data+" ");
         preorder(node.left);
         preorder(node.right);
     }
@@ -34,7 +34,7 @@ public class BinaryTree_Traversal {
          if(node==null)return;
         postorder(node.left);
         postorder(node.right);
-        System.out.println(node.data);
+        System.out.println(node.data+" ");
     }
     static class Node{
         int data;
@@ -49,8 +49,11 @@ public class BinaryTree_Traversal {
 
     public static void main(String[] args) {
         Node root=createNode();
+        System.out.println("preorder");
         preorder(root);
+        System.out.println("inorder");
         inorder(root);
+        System.out.println("postorder");
         postorder(root);
     }
 }

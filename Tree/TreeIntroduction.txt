@@ -1,4 +1,6 @@
-*Tree
+Tree
+* A Tree can contain Acyclic
+
 *Binary Tree: A tree structure where each node has at most two children.[0,1,2 number of sub nodes]
 *Types:
 a. Complete BT :2 nodes for each parent node ,even if the last level nodes isn't completely filled, if the last level nodes ends on right it's not a complete binary tree

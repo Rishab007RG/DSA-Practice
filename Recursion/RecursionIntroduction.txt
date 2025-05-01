@@ -26,6 +26,6 @@ Binary Tree Traversal
 * 2nd Inorder (LNR) Left most node of the tree
 * 3rd Postorder (LRN) Left most node of the tree
 
-Construct Binary Tree from Preorder, Inorder, Postorder
+Construct Binary Tree from Preorder(NLR), Inorder(LNR), Postorder(LRN)
 
 
