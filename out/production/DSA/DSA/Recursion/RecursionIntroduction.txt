@@ -17,7 +17,15 @@ Recursion Tracking can be done in 2 ways:
 * Activation record
 * Instruction point
 
-Binary Implementation in Two ways:
+Binary Tree Implementation in Two ways:
 * Array
 * LinkedList
+
+Binary Tree Traversal
+* 1st Preorder (NLR)
+* 2nd Inorder (LNR) Left most node of the tree
+* 3rd Postorder (LRN) Left most node of the tree
+
+Construct Binary Tree from Preorder, Inorder, Postorder
+
 
