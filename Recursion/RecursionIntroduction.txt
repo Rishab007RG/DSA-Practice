@@ -1,0 +1,31 @@
+Recursion:
+* It's mandatory that time and space complexity reduces
+* More readable format
+* Efficient approach (Implementation is easy compared to looping statements)
+
+* When function call itself
+* Base condition is must (terminating condition): if not present the method undergoes infinite loop
+* Used to solve bigger problems after breaking it down into smaller problems
+* Iterative problem to Recursive problem
+
+Recursion Tracking can be done in 2 ways:
+1. Stack
+2. Tree
+
+1.Stack
+* main() stores first in the stack.
+* Activation record
+* Instruction point
+
+Binary Tree Implementation in Two ways:
+* Array
+* LinkedList
+
+Binary Tree Traversal
+* 1st Preorder (NLR)
+* 2nd Inorder (LNR) Left most node of the tree
+* 3rd Postorder (LRN) Left most node of the tree
+
+Construct Binary Tree from Preorder, Inorder, Postorder
+
+
