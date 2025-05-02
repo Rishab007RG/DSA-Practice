@@ -45,5 +45,5 @@ c.Multi List(LinkedList rep)
 ->Edge List
 
 Graph Traversal
-a.Breadth first search(Queue)
-b.Depth first search(Stack)
+a.Breadth first search(Queue FIFO)
+b.Depth first search(Stack LIFO)
