@@ -25,3 +25,25 @@ Terminologies
 * Articulation Point:Removing a vertices from the graph causing it disconnected is called Articulated point.
 * Weighted Graph:passing a weight to the edges. (Graph always searches for the shortest path).
 * Bridge:An edge on removing causes an disconnection in graph is called Bridge.
+
+
+Graph Representation:
+a.Adjacency Matrix (Array representation)
+b.Adjacency List(LinkedList rep)
+c.Multi List(LinkedList rep)
+
+a.Adjacency Matrix(Array Representation)
+* Aij :0 if no connection exist
+* Aij :1 if connection exist between Ai-Aj, cal also mention weight, Directed graph might change the values
+ex: connection between A and B is 0 when directs from B->A
+
+b.Adjacency List(LinkedList rep)
+* Vertices are stored as array and there adjacent connection in list format
+
+c.Multi List(LinkedList rep)
+->Node List
+->Edge List
+
+Graph Traversal
+a.Breadth first search(Queue)
+b.Depth first search(Stack)

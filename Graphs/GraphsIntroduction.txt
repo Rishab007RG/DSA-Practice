@@ -43,3 +43,7 @@ b.Adjacency List(LinkedList rep)
 c.Multi List(LinkedList rep)
 ->Node List
 ->Edge List
+
+Graph Traversal
+a.Breadth first search(Queue)
+b.Depth first search(Stack)
