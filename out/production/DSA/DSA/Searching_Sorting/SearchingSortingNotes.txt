@@ -1,0 +1,9 @@
+Searching:
+a.Linear Search
+b.Binary Search
+
+Sorting:
+a.Bubble
+b.Selection
+c.Insertion
+d.Quick
