@@ -5,9 +5,9 @@ import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Graph_Imp_Using_AdjacencyList {
+public class Graph_Implementation {
     private LinkedList<Integer> adjacency[];
-    public Graph_Imp_Using_AdjacencyList(int v){
+    public Graph_Implementation(int v){
         adjacency=new LinkedList[v];// array size
         for (int i = 0; i < v; i++) {
             System.out.println(i);
@@ -63,7 +63,7 @@ public class Graph_Imp_Using_AdjacencyList {
         System.out.println("Enter number of vertices and edges");
         int v=sc.nextInt();
         int e=sc.nextInt();
-        Graph_Imp_Using_AdjacencyList g=new Graph_Imp_Using_AdjacencyList(v);
+        Graph_Implementation g=new Graph_Implementation(v);
         System.out.println("Enter the edges");
         for (int i = 0; i < e; i++) {
             System.out.println(i);

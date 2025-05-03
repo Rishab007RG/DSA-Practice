@@ -47,3 +47,34 @@ c.Multi List(LinkedList rep)
 Graph Traversal
 a.Breadth first search(Queue FIFO)
 b.Depth first search(Stack LIFO)
+
+SPANNING TREE
+* A subset of graph G,which has all the vertices covered with minimum possible number of edges.
+* It does not have a cycle.
+* It can't be disconnected.
+* A graph can have more than one spanning tree.
+* All spanning tree have same number of edges i.e (n-1).
+* It is minimally connected.
+* Undirected.
+used in:
+* Computer networking routing.
+* Circuit Design
+* Clustering algorithm
+
+MINIMUM SPANNING TREE:
+* A graph with many spanning tree and separating all the spanning tree and calculating the edges weight providing the least value will be known as Minimum Spanning tree.
+It can be figured using 2 methods:
+a.Kruskal Algorithm
+b.Prims Algorithm
+
+Rules:
+* Remove any self loop and parallel edges exist in the given graph.
+
+SHORTEST PATH ALGORITHM:
+To determine the shortest path between the source and destination vertices.
+
+can be calculated in 2 ways:
+a. Dijkstra Algorithm (Single source shortest path)
+b. Floyd Algorithm
+relax()-> Explanation in java code book.
+
