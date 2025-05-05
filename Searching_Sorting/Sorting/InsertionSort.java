@@ -14,7 +14,7 @@ public class InsertionSort {
             arr[i] = sc.nextInt();
         }
 
-        for (i = 1; i < arr.length; i++) {  // <-- Fixed this line
+        for (i = 1; i < arr.length; i++) {
             int temp = arr[i];
             j = i - 1;
             while (j >-1 && arr[j] > temp) {

@@ -41,7 +41,7 @@ class DivideAndConquer{
         if(start<end){
             int p=conquer(arr,start,end);
             divide(arr,start,p-1);
-            divide(arr,p+1,end);
+            divide(arr,p+   1,end);
         }
     }
 }
