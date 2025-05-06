@@ -1,0 +1,37 @@
+Hashing: It is a process of mapping a large amount of data items to a smaller table with the help of hash function.
+* The data will be of Arbitrary size ,Hash table will be of fixed size.
+
+Hash Function:
+a.Division Method: (%) reminder value of a number
+b. Mid square Method : square a number and fetch the middle value
+
+Collision resolution techniques:
+When two elements get the same hash index.
+a.Seperate Chaining: storing the data in the form of LinkedList in each cell.
+  disadvantages: Memory wastage due to pointer occupying space.
+b.Open Addressing:
+* Probing:The process of examining the location for the key in order to store the data in the hashtable.
+  a. Linear Probing:
+  b. Quadratic Probing:
+  c. Double Hashing Probing:
+
+a.Linear Probing:
+L(k,i)=(h'(k)+i)mod m.
+h'(k)=k mod m.
+m=size of hashtable
+k=key
+i=0 to (m-1)
+disadvantage:
+* Clustering:Clustering happens when many elements get stored close together in a hash table because of collisions.
+* Searching O(n) :This disadvantage is over come by "Quadratic Probing".
+
+b.Quadratic Probing:
+L(k,i)=(h'(k)+C1i+C2i^2)mod m.
+C1,C2 = Constants: generally can assume anything but preferred as "C1=C2=1"
+m=size of hashtable
+
+c.Double Hashing
+L(k,i)=(h1(k)+ih2(k))mod m
+h1(k)=k mod m.
+h2(k)=k mod m'.
+m'<m
